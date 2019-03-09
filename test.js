@@ -8,7 +8,7 @@ describe('makeExchange function', () => {
   });
 
   it('should return correct object if the currency less than or equal to 1000', () => {
-    assert.deepEqual(makeExchange(1000), {"H": 20});
+    assert.deepEqual(makeExchange(1000), {"H":20});
     assert.deepEqual(makeExchange(9999), {"H":199,"Q":1,"D":2,"P":4});
   });
 
